@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:id="@+id/activity_main"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+
+        android:background="#DAD2EA"
+        android:orientation="vertical"
+        android:padding="10dp">
+
+
+        <TextView
+            android:id="@+id/textVieweu"
+            style="@style/CustomHeadLine6"
+            android:layout_width="match_parent"
+            android:layout_height="25dp"
+            android:layout_marginTop="30dp"
+            android:background="@color/secondaryDarkColor"
+            android:gravity="center"
+            android:text="Currency Converter. Europe" />
+
+        <TextView
+            android:id="@+id/textView2eu"
+            android:layout_width="wrap_content"
+            android:layout_height="31dp"
+            android:layout_marginTop="20dp"
+            android:text="Select the currency from which we convert"
+            android:textSize="15sp" />
+
+        <Spinner
+            android:id="@+id/currencies_from_spinner_eu"
+            android:layout_width="239dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="0dp"
+            android:background="@color/secondaryLightColor" />
+
+        <TextView
+            android:id="@+id/textView3eu"
+            android:layout_width="270dp"
+            android:layout_height="30dp"
+            android:layout_marginTop="20dp"
+            android:text="Select the currency to which we convert"
+            android:textSize="15sp" />
+
+        <Spinner
+            android:id="@+id/currencies_to_spinner_eu"
+            android:layout_width="239dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="0dp"
+            android:background="@color/secondaryLightColor" />
+
+        <TextView
+            android:id="@+id/textView5eu"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:text="Enter the amount:"
+            android:textSize="16sp" />
+
+        <EditText
+            android:id="@+id/amount_input_eu"
+            android:layout_width="158dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:ems="10"
+            android:inputType="number" />
+
+        <Button
+            android:id="@+id/convert_eu_button"
+            style="@style/CustomHeadLine6"
+            android:layout_width="280dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:text="Convert!"
+            app:backgroundTint="@color/secondaryDarkColor" />
+
+        <TextView
+            android:id="@+id/textView6eu"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:text="Result:"
+            android:textSize="16sp" />
+
+
+        <EditText
+            android:id="@+id/result_field_eu"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:ems="10"
+            android:inputType="number" />
+
+        <Button
+            android:id="@+id/closeButton"
+            style="@style/CustomHeadLine6"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="30dp"
+            android:onClick="closeButton"
+            android:text="Home Page"
+            app:backgroundTint="@color/secondaryDarkColor"
+            app:iconTint="@color/secondaryDarkColor" />
+
+
+    </LinearLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

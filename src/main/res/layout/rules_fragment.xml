@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:id="@+id/about"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/secondaryLightColor"
+        android:orientation="vertical"
+        android:padding="16dp">
+
+
+        <TextView
+            style="@style/CustomHeadLine6"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="20dp"
+            android:text="How to use" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="20dp"
+            android:background="@color/secondaryLightColor"
+            android:paddingStart="10dp"
+            android:text="In the application the converting between 5 national currencies of the countries of America and 5 national currencies of the countries of Europe is realized. To start working, select the region of the countries whose currencies you want to convert  on the main window - America or Europe. In the window that opens, select the currency from which we convert and the currency to which we convert. Then enter the amount you want to convert and click the Convert button. If you want to select another region, return to the main window"
+            android:textSize="17sp" />
+
+        <Button
+            android:id="@+id/closeButton"
+            style="@style/CustomHeadLine6"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="50dp"
+            android:onClick="closeButton"
+            android:text="Home Page"
+            app:backgroundTint="@color/secondaryDarkColor"
+            app:iconTint="@color/secondaryDarkColor" />
+
+
+    </LinearLayout>
+        </androidx.constraintlayout.widget.ConstraintLayout>

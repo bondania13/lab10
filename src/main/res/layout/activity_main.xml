@@ -1,0 +1,117 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/activity_main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+
+    <LinearLayout
+    android:id="@+id/buttons"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#DAD2EA">
+
+        <Button
+            android:id="@+id/convert_eu_button"
+            android:contentDescription="convert_eu_button_hint"
+            style="@style/CustomHeadLine6"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="120dp"
+            android:layout_y="100dp"
+            android:background="@color/primaryLightColor"
+            android:backgroundTint="@color/primaryLightColor"
+            android:fontFamily="@font/artifika"
+            android:onClick="openEUconverter"
+            android:text="Europe"
+            android:textColor="@color/secondaryTextColor"
+            android:textSize="16sp"
+             />
+
+
+        <Button
+            android:id="@+id/convert_am_button"
+            android:contentDescription="convert_am_button_hint"
+            style="@style/CustomHeadLine6"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/convert_eu_button"
+            android:layout_marginTop="5dp"
+            android:fontFamily="@font/artifika"
+            android:onClick="openAMconverter"
+            android:text="America"
+            android:textColor="#020000"
+            android:textSize="16sp"
+            android:background="@color/primaryLightColor"
+            app:backgroundTint="@color/primaryLightColor" />
+
+    <Button
+        android:id="@+id/openAbout"
+        style="@style/TextAppearance.Button"
+        android:contentDescription="about_button_hint"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/convert_am_button"
+        android:layout_marginTop="150dp"
+        android:onClick="openAbout"
+        android:text="About" />
+
+    <Button
+        android:id="@+id/openRules"
+        android:contentDescription="rules_button_hint"
+        style="@style/TextAppearance.Button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/openAbout"
+        android:layout_marginTop="10dp"
+        android:fontFamily="@font/amarante"
+        android:onClick="openRules"
+        android:text="How to use" />
+
+
+
+</LinearLayout>
+
+
+    <TextView
+        android:id="@+id/Title"
+        android:hint="title_main_hint"
+        style="@style/CustomHeadLine6"
+        android:textAppearance="?attr/textAppearanceHeadline5"
+        android:layout_width="450dp"
+        android:layout_height="40dp"
+        android:layout_marginTop="60dp"
+        android:gravity="center_horizontal"
+        android:text="Choose the location" />
+
+<fragment
+android:id="@+id/europeFragment"
+android:layout_width="match_parent"
+android:layout_weight="1"
+android:layout_height="match_parent"
+android:name="com.example.lab1.EuropeFragment"/>
+    <!--    -->
+<fragment
+android:id="@+id/americaFragment"
+android:layout_width="match_parent"
+android:layout_weight="1"
+android:layout_height="match_parent"
+android:name="com.example.lab1.AmericaFragment"/>
+
+    <fragment
+        android:id="@+id/aboutFragment"
+        android:layout_width="match_parent"
+        android:layout_weight="1"
+        android:layout_height="match_parent"
+        android:name="com.example.lab1.AboutFragment"/>
+
+<fragment
+android:id="@+id/rulesFragment"
+android:layout_width="match_parent"
+android:layout_weight="1"
+android:layout_height="match_parent"
+android:name="com.example.lab1.RulesFragment"/>
+
+</RelativeLayout>

@@ -1,0 +1,14 @@
+<resources>
+    <string name="app_name">lab1</string>
+    <string name="contentDescription">>description</string>
+    <string name="description">Image</string>
+    <string name="title_main_hint">Choose the location </string>
+    <string name="convert_eu_button_hint">Convert european currency</string>
+    <string name="convert_am_button_hint">Convert american currency</string>
+    <string name="about_button_hint">Go to about window</string>
+    <string name="rules_button_hint">Go to How to use window</string>
+    <string name="am_title_hint">Currency Converter. America</string>
+    <string name="am_choose_from_hint">Select the currency from which we convert</string>
+    <string name="am_choose_to_hint">Select the currency to which we convert</string>
+
+</resources>

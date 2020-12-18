@@ -1,0 +1,137 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <AbsoluteLayout
+
+        android:id="@+id/america_fr"
+        android:layout_width="match_parent"
+
+        android:layout_height="match_parent"
+        android:background="#DAD2EA"
+        android:orientation="vertical"
+        android:padding="10dp">
+
+
+        <TextView
+            android:id="@+id/textViewam"
+            android:contentDescription="am_title_hint"
+            style="@style/CustomHeadLine6"
+            android:layout_width="match_parent"
+            android:layout_height="25dp"
+            android:layout_y="30dp"
+            android:background="@color/secondaryDarkColor"
+            android:gravity="center"
+            android:text="Currency Converter. America" />
+
+        <TextView
+            android:id="@+id/textView2am"
+            android:contentDescription="am_choose_from_hint"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_x="10dp"
+            android:layout_y="80dp"
+            android:text="Select the currency from which we convert"
+            android:textColor="@color/secondaryTextColor"
+            android:textSize="15sp" />
+
+        <Spinner
+            android:id="@+id/currencies_from_spinner_am"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_x="10dp"
+            android:layout_y="110dp"
+            android:background="@color/secondaryLightColor" />
+
+        <TextView
+            android:id="@+id/textView3am"
+            android:contentDescription="am_choose_to_hint"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_x="10dp"
+            android:layout_y="170dp"
+            android:text="Select the currency to which we convert"
+            android:textColor="@color/secondaryTextColor"
+            android:textSize="15sp" />
+
+        <Spinner
+            android:id="@+id/currencies_to_spinner_am"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_x="10dp"
+            android:layout_y="200dp"
+            android:background="@color/secondaryLightColor" />
+
+        <TextView
+            android:id="@+id/textView5am"
+            android:contentDescription="amount_hint"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_x="10dp"
+            android:layout_y="280dp"
+            android:text="Enter the amount:"
+            android:textColor="@color/secondaryTextColor"
+            android:textSize="16sp" />
+
+        <EditText
+            android:id="@+id/amount_input_am"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_x="10dp"
+            android:layout_y="295dp"
+            android:ems="10"
+            android:inputType="number" />
+
+        <Button
+            android:id="@+id/convert_am_button"
+            android:contentDescription="am_convert_hint"
+            style="@style/CustomHeadLine6"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_x="130dp"
+            android:layout_y="360dp"
+            android:background="@color/secondaryDarkColor"
+            android:onClick="onOperationClick_am"
+            android:text="Convert!"
+            app:backgroundTint="@color/secondaryDarkColor" />
+
+        <TextView
+            android:id="@+id/textView4am"
+            android:contentDescription="am_result_hint"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_x="10dp"
+            android:layout_y="420dp"
+            android:text="Result:"
+            android:textColor="@color/secondaryTextColor"
+            android:textSize="16sp" />
+
+
+        <EditText
+            android:contentDescription="am_result_hint"
+            android:id="@+id/result_field_am"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_x="10dp"
+            android:layout_y="440dp"
+            android:ems="10"
+            android:inputType="number" />
+
+        <Button
+            android:id="@+id/closeButton"
+            android:contentDescription="goto_home_hint"
+            style="@style/CustomHeadLine6"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_x="120dp"
+            android:layout_y="520dp"
+
+            android:background="@color/secondaryDarkColor"
+            android:onClick="closeButton"
+            android:text="Home Page"
+            app:backgroundTint="@color/secondaryDarkColor" />
+
+    </AbsoluteLayout>
+</RelativeLayout>
